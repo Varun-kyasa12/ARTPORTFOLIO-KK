@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Karthik — traditional portrait artist." />
+    <meta name="theme-color" content="#1a1816" />
+    <title>Karthik — Traditional Portrait Artist</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="welcome-overlay" id="welcome-overlay" aria-hidden="false">
+      <div class="welcome-content">
+        <p class="welcome-kicker">WELCOME TO</p>
+        <p class="welcome-title">Karthik’s Art Portfolio</p>
+        <span class="welcome-stroke" aria-hidden="true"></span>
+      </div>
+    </div>
+    <span class="cursor-follower" aria-hidden="true"></span>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="index.html" aria-label="Karthik home">KARTHIK</a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Toggle primary navigation"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true">
+            <span></span><span></span>
+          </span>
+        </button>
+
+        <nav class="site-navigation" id="site-navigation" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link is-active" href="index.html" aria-current="page">Home</a></li>
+            <li><a class="nav-link" href="#selected-works">Selected Works</a></li>
+            <li><a class="nav-link" href="#collections">Collections</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">A traditional art portfolio</p>
+          <h1 id="hero-title">Every face <em>holds</em> a story.</h1>
+          <p class="hero-introduction">Karthik explores the quiet character of a face through traditional portrait drawing, graphite studies, color, and expressive observation.</p>
+          <div class="hero-actions" aria-label="Homepage actions">
+            <a class="button button-primary" href="#collections">Explore the Collection <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#about">Meet the Artist <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <figure class="featured-artwork">
+          <div class="hero-carousel" data-hero-carousel role="region" aria-roledescription="carousel" aria-label="Featured artwork">
+            <div class="carousel-stage" data-carousel-stage></div>
+            <div class="carousel-footer">
+              <div class="carousel-indicators" data-carousel-indicators role="group" aria-label="Choose featured artwork"></div>
+              <div class="carousel-controls">
+                <button type="button" class="carousel-control" data-carousel-prev aria-label="Previous featured artwork">←</button>
+                <button type="button" class="carousel-control" data-carousel-next aria-label="Next featured artwork">→</button>
+              </div>
+            </div>
+          </div>
+          <figcaption aria-live="polite" aria-atomic="true"><span data-featured-title>Portrait Study</span><span data-featured-medium>Graphite on paper</span></figcaption>
+        </figure>
+      </section>
+
+      <div class="artwork-marquee" aria-label="Traditional art portfolio themes">
+        <div class="artwork-marquee-track"><span>TRADITIONAL ART</span><i aria-hidden="true">✦</i><span>PORTRAITURE</span><i aria-hidden="true">✦</i><span>GRAPHITE STUDIES</span><i aria-hidden="true">✦</i><span>COLOR &amp; CHARACTER</span><i aria-hidden="true">✦</i><span>TRADITIONAL ART</span><i aria-hidden="true">✦</i><span>PORTRAITURE</span><i aria-hidden="true">✦</i></div>
+      </div>
+
+      <section class="collections-section container" id="collections" aria-labelledby="collections-title">
+        <div class="section-heading section-heading-compact">
+          <div>
+            <p class="eyebrow">Browse by feeling</p>
+            <h2 id="collections-title">The collections.</h2>
+          </div>
+          <p class="section-introduction">Four ways into Karthik’s practice, each rooted in the real works gathered in this portfolio.</p>
+        </div>
+        <div class="collection-grid" data-collection-grid></div>
+      </section>
+
+      <section class="selected-works-section container" id="selected-works" aria-labelledby="selected-works-title">
+        <div class="section-heading section-heading-compact">
+          <div>
+            <p class="eyebrow">A closer look</p>
+            <h2 id="selected-works-title">Selected works.</h2>
+          </div>
+          <a class="text-link" href="#works">Explore the complete collection <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="curated-grid" data-curated-grid></div>
+      </section>
+
+      <section class="works-section container" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The collection</p>
+          <h2 id="works-title">Complete collection.</h2>
+          </div>
+          <p class="section-introduction">A considered home for portrait studies, facial expressions, traditional color work, and character sketches.</p>
+        </div>
+        <div class="works-filters" data-category-filters role="group" aria-label="Filter artworks by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="Portraits &amp; Faces" aria-pressed="false">Portraits &amp; Faces</button>
+          <button class="filter-button" type="button" data-filter="Color &amp; Traditional Art" aria-pressed="false">Color &amp; Traditional Art</button>
+          <button class="filter-button" type="button" data-filter="Studies &amp; Sketches" aria-pressed="false">Studies &amp; Sketches</button>
+          <button class="filter-button" type="button" data-filter="Character Art" aria-pressed="false">Character Art</button>
+        </div>
+        <p class="artwork-status" data-artwork-status role="status" aria-live="polite"></p>
+        <div class="artwork-grid" data-artwork-grid aria-live="polite"></div>
+      </section>
+
+      <section class="about-section container" id="about" aria-labelledby="about-title">
+        <div class="about-marker" aria-hidden="true">
+          <span>01</span>
+          <span class="marker-rule"></span>
+          <span>The practice</span>
+        </div>
+        <figure class="about-artwork">
+          <img src="assets/artist/karthik-portrait.png" alt="Karthik" loading="eager" decoding="async">
+          <figcaption><span>From the practice</span><span>Expressive Portrait Study</span></figcaption>
+        </figure>
+        <div class="about-content">
+          <p class="eyebrow">About Karthik</p>
+          <h2 id="about-title">The artist behind the portraits.</h2>
+          <div class="about-body">
+            <p class="about-lead">I'm Karthik, a traditional artist drawn to the art of capturing faces, expressions, and the emotions that make every person unique.</p>
+            <p>For me, a portrait is more than a representation of someone's appearance. It is an opportunity to pay attention to the small details that give a face its character—the expression in the eyes, the structure of the features, the relationship between light and shadow, and the subtle differences that make each subject distinctive.</p>
+            <p>My interest in traditional art comes from the experience of building an image through observation, patience, and careful attention to detail. I enjoy the process of developing a portrait step by step, refining the forms and expressions until the artwork feels complete. I want my work to communicate not only what a person looks like, but also something of the feeling and personality suggested by their expression.</p>
+            <p>As I continue to develop my artistic practice, I want to strengthen my drawing skills, explore new ways of expressing emotion through portraiture, and create a body of work that reflects my growth and individual artistic direction.</p>
+            <p>This portfolio brings together my work, my interest in portrait art, and my ongoing journey as an artist. Each piece is an opportunity to learn, improve, and express something through the simple but meaningful act of drawing a face.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section container" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div class="contact-heading">
+            <p class="eyebrow">Open for conversation</p>
+            <h2 id="contact-title">Let’s talk about artwork and collaborations.</h2>
+            <p>For enquiries, collaborations, or to follow Karthik’s work, use one of the links below.</p>
+          </div>
+          <address class="contact-links" aria-label="Contact options">
+            <a class="contact-link" href="https://www.instagram.com/karthik.artzzz/" target="_blank" rel="noopener noreferrer" aria-label="Follow Karthik on Instagram">
+              <span class="contact-link-label">Instagram</span>
+              <span class="contact-link-value">@karthik.artzzz <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="contact-link" href="mailto:karthikkyasa7@gmail.com" aria-label="Email Karthik at karthikkyasa7@gmail.com">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">karthikkyasa7@gmail.com <span aria-hidden="true">↗</span></span>
+            </a>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="artwork-lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-details" tabindex="-1">
+        <div class="lightbox-toolbar">
+          <p class="lightbox-count" aria-live="polite"></p>
+          <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close artwork viewer">Close <span aria-hidden="true">×</span></button>
+        </div>
+        <div class="lightbox-stage">
+          <div class="lightbox-artwork-placeholder" role="img" aria-label="Artwork placeholder"></div>
+          <img class="lightbox-image" alt="" hidden />
+        </div>
+        <div class="lightbox-caption">
+          <div>
+            <p class="lightbox-eyebrow">Artwork detail</p>
+            <h2 id="lightbox-title"></h2>
+            <p id="lightbox-details"></p>
+          </div>
+          <div class="lightbox-controls" aria-label="Artwork navigation">
+            <button type="button" data-lightbox-prev aria-label="View previous artwork">← <span>Previous</span></button>
+            <button type="button" data-lightbox-next aria-label="View next artwork"><span>Next</span> →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>KARTHIK</span>
+        <span class="footer-rule" aria-hidden="true"></span>
+        <span>Traditional portrait artist</span>
+      </div>
+    </footer>
+  </body>
+</html>
